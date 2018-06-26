@@ -36,15 +36,31 @@
 <v t="yen.20170108171733.14" a="E"><vh>封面投影片</vh>
 <v t="yen.20170108171733.15"><vh>封面投影片內容</vh></v>
 </v>
-<v t="yen.20170108171733.64"><vh>各式內容引用範例</vh></v>
-<v t="leo.20170622234235.1"><vh>newHeadline</vh>
-<v t="yen.20170108171733.67"><vh>導入縮排程式碼</vh>
-<v t="yen.20170108171733.69"><vh>導入影片</vh>
-<v t="yen.20170108171733.70"><vh>iframe 導入影片</vh></v>
+<v t="yen.20170108171733.64"><vh>week3</vh></v>
+<v t="leo.20180626205315.1"><vh>week4</vh></v>
+<v t="leo.20180626205411.1"><vh>week5</vh></v>
+<v t="leo.20180626205411.3" a="E"><vh>week7</vh>
+<v t="leo.20180626205517.1"><vh>1</vh></v>
+<v t="leo.20180626205524.1"><vh>2</vh></v>
+<v t="leo.20180626205525.1"><vh>3</vh></v>
+<v t="leo.20180626205525.2"><vh>4</vh></v>
+<v t="leo.20180626205526.1"><vh>5</vh></v>
+<v t="leo.20180626205547.1"><vh>上課筆記</vh></v>
 </v>
-<v t="leo.20170622234003.1"><vh>video</vh></v>
+<v t="leo.20180626205411.2" a="E"><vh>midterm report</vh>
+<v t="leo.20180626221318.1"><vh>1</vh></v>
+<v t="leo.20180626221340.1"><vh>2</vh></v>
+<v t="leo.20180626221340.2"><vh>3</vh></v>
+<v t="leo.20180626221340.3"><vh>4</vh></v>
+<v t="leo.20180626221341.1"><vh>5</vh></v>
+<v t="leo.20180626221341.2"><vh>6</vh></v>
 </v>
-</v>
+<v t="leo.20180626205411.4"><vh>week10</vh></v>
+<v t="leo.20180626205411.5"><vh>week11</vh></v>
+<v t="leo.20180626205412.1"><vh>week12~14</vh></v>
+<v t="leo.20180626225913.1"><vh>week15</vh></v>
+<v t="leo.20180626205412.2"><vh>week16</vh></v>
+<v t="leo.20180626205412.3"><vh>week17</vh></v>
 </v>
 </v>
 </v>
@@ -56,7 +72,7 @@
 <v t="leo.20180530092509.1"><vh>@edit 20180525.md</vh></v>
 <v t="leo.20180530092518.1"><vh>@edit 20180526.md</vh></v>
 </v>
-<v t="yen.20170108171733.81"><vh>@path pages</vh>
+<v t="yen.20170108171733.81" a="E"><vh>@path pages</vh>
 <v t="yen.20170108171733.82"><vh>@edit pages_1.md</vh></v>
 </v>
 </v>
@@ -67,11 +83,272 @@
 </vnodes>
 <tnodes>
 <t tx="leo.20170622224243.1"></t>
-<t tx="leo.20170622234003.1"></t>
-<t tx="leo.20170622234235.1">&lt;section&gt;
-@others
-&lt;/section&gt;
-</t>
+<t tx="leo.20180626205315.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+# week 4
+
+[提球機構範例影片](https://youtu.be/lg7U3efS77w)
+
+    &lt;/script&gt;
+&lt;/section&gt;</t>
+<t tx="leo.20180626205411.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+## week 5
+### 開啟cd_w5b.txt ，使用UTF-8編碼開啟
+### with open('cd_w5b.txt', encoding='UTF-8') as tt:
+    # 讀取檔案
+    lines = tt.readlines()
+    for i in range(len(lines)):
+        # 利用 strip() 去除各行字串最末端的跳行符號
+        line = lines[i].strip()
+        # 利用 split() 將以 \t 區隔的字串資料分離後納入 groups 字串
+        groups = line.split("\t")
+        for i in range(len(groups)):
+            if i%2 == 0:
+                print()
+                print("學號不重複的為缺席")
+                print(groups[i])
+            else:
+                print(groups[i])
+    &lt;/script&gt;
+&lt;/section&gt;</t>
+<t tx="leo.20180626205411.2">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+# 第十組 期中考報告
+
+[第十組倉儲](https://github.com/s40523230/cd2018_team_10)
+
+[期中考報告word下載檔案](https://github.com/s40523230/cd2018_team_10/raw/master/106-2_cd2018-10_%E6%9C%9F%E4%B8%AD%E5%A0%B1%E5%91%8A%20.docx)
+    &lt;/script&gt;
+&lt;/section&gt;</t>
+<t tx="leo.20180626205411.3">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+# week 7
+
+####### Q1. 在 V-rep 模擬平台中, 展示各組所選定的鋼球運動系統, 是否可以完成至少兩個週期的循環運動?
+
+####### Q2. 各組頂球機構的位移、速度與加速度分析, 手動運算是否與程式驗算或 V-rep 模擬相符？
+
+####### Q3. 詳細說明各組如何進行協同設計, 如何利用 Gitbook、Github 與近端或雲端主機增加設計流程效益？
+
+####### Q4. 提供各組鋼球運動系統的細部零件材料表、各零件工程圖與組立檔, 若使用 Solidworks, Inventor 或 Creo 請提供相關檔案, 若使用 Onshape, 請提供個別零組件與工程圖的網路連結.
+
+####### Q5. 所有組員的貢獻請各自使用學號登記下的 cd2018 倉儲展示, 各組期中報告則整理在各組的 Gitbook 中
+
+    &lt;/script&gt;
+&lt;/section&gt;</t>
+<t tx="leo.20180626205411.4">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+# week10
+
+練習利用Pyslvs做連桿機構模擬，再存檔，利用solvespace開啟，便能看到尺寸
+
+[影片連結](https://youtu.be/cEMjc6YctoU)
+[檔案](https://github.com/s40523230/cd2018_team_10/tree/master/week_10)
+
+&lt;a href="https://s40523205.gitbooks.io/cd2018/content/assets/%E6%9C%AA%E5%91%BD%E5%90%8D1.png"&gt;&lt;img src="https://s40523205.gitbooks.io/cd2018/content/assets/%E6%9C%AA%E5%91%BD%E5%90%8D1.png"&gt;&lt;/a&gt;
+&lt;a href="https://s40523205.gitbooks.io/cd2018/content/assets/import.pngs"&gt;&lt;img src="https://s40523205.gitbooks.io/cd2018/content/assets/import.png"&gt;&lt;/a&gt;
+    &lt;/script&gt;
+&lt;/section&gt;</t>
+<t tx="leo.20180626205411.5">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+# week11
+
+[模擬影片連結](https://youtu.be/xLcO2C6akMo)
+
+這是第一次嘗試做軌道配合機構的試作品，檔名是[aaa.stl](https://github.com/s40523230/cd2018_team_10/raw/master/week11/finish/fail/aaa.stl)
+，可是這個的軌道模擬的時候，球都會滾出去到軌道外，所以直接放棄這個試作品，直接嘗試做出新的，於是從頭重新做了一個新的機構和軌道，檔案名為[Assembly 1 (4).stl](https://github.com/s40523230/cd2018_team_10/raw/master/week11/finish/fail/Assembly%201%20%284%29.stl)
+，這張圖是機構的雛形和軌道大概的方向圖，我們組最初的草案就這樣被做出來，後來把軌道的雛型畫完，變成了比較像樣的機構，檔案名為[662.stl](https://github.com/s40523230/cd2018_team_10/raw/master/week11/finish/fail/662.stl)
+，不過這樣的機構還沒辦法跑模擬，還是有很多缺點，例如球會卡在軌道或者載運球過程會滾出去等等，有很多地方需要修改，最後經過了約七十次的反覆修改與修正，就變成了可運行的機構，檔案名為[662.ttt](https://github.com/s40523230/cd2018_team_10/raw/master/week11/finish/662.ttt)
+，詳細的運行方式可以看看[模擬影片](https://youtu.be/xLcO2C6akMo)
+    &lt;/script&gt;
+&lt;/section&gt;</t>
+<t tx="leo.20180626205412.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+# week12
+
+[繪製靜態組合正齒輪](https://s40523230.github.io/cd2018/blog/hui-zhi-jing-tai-zheng-chi-lun.html)
+
+[繪製組合轉動正齒輪](https://s40523230.github.io/cd2018/blog/hui-zhi-jing-tai-zu-he-zheng-chi-lun.html)
+
+[繪製靜態正齒輪](https://s40523230.github.io/cd2018/blog/hui-zhi-zu-he-zhuan-dong-zheng-chi-lun.html)
+
+# week13.14
+
+[繪製個人3段式連桿，並使用VREP模擬](https://youtu.be/hFHdkJ084Mg)
+
+    &lt;/script&gt;
+&lt;/section&gt;</t>
+<t tx="leo.20180626205412.2">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+# week16
+
+[第十組資料彙整](https://github.com/s40523230/gitbook/tree/master/bg10)
+
+[bg10每周進度](https://github.com/s40523230/gitbook/blob/master/SUMMARY.md)
+    &lt;/script&gt;
+&lt;/section&gt;</t>
+<t tx="leo.20180626205412.3">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+# week17
+
+[期末考影片報告](https://youtu.be/3Buz565lbL0)
+
+    &lt;/script&gt;
+&lt;/section&gt;</t>
+<t tx="leo.20180626205517.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+Q1.
+    
+[提球機構範例影片](https://youtu.be/lg7U3efS77w)
+
+    &lt;/script&gt;
+&lt;/section&gt;</t>
+<t tx="leo.20180626205524.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+Q2.[提球機構檔案](https://github.com/s40523230/cd2018_team_10/blob/master/%E7%AC%AC%E5%8D%81%E7%B5%84v-rep%E6%8F%90%E7%90%83%E6%A8%A1%E6%93%AC%E6%A9%9F%E6%A7%8B.ttt)
+
+[手動運算]
+單位 : mm
+
+提球機構從下運至上的移動路徑為128(直徑)/2*3.14 = 213.52，要花39秒，經過上面到接口並且掉下來的路徑時間大概只需要4秒，掉下來後沿著路徑回到原點大約也是4秒，總結會花上47秒
+
+[V-rep模擬]
+
+提球機構從下運至上花了39秒，經過上面到接口並且掉下來的路徑時間，因為停留了一下，所以變成了6~8秒，掉下來後沿著路徑回到原點大約4秒，總結會花上49~51秒，模擬與手動運算上相差了2~4秒
+
+    &lt;/script&gt;
+&lt;/section&gt;</t>
+<t tx="leo.20180626205525.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+Q3.
+    
+各組員各自使用應用程式，進行提球機構的編譯，並把自己較為擅長的部份做出來，
+然後在雲端上執行或模擬，所以不需要較大的硬碟與記憶體，
+另外針對需要大量計算的應用程式，也把它放到雲端上面執行，也減少了許多的運算時間，
+之後再利用Gitbook上傳並進行協同，每個組員都可以利用Gitbook同時存取，
+進行修改或編譯，不會受到空間的限制，而且不論各組用利用何種裝置，
+只需要網路即可使用雲端，大大增加設計流程的效益。
+    &lt;/script&gt;
+&lt;/section&gt;</t>
+<t tx="leo.20180626205525.2">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+Q4.
+
+[工程圖](https://cad.onshape.com/documents/e43a92bce77d4a2001325cde/w/6dde5599b844fe7f512f0663/e/d23bd136858e1736636c6f33)
+    &lt;/script&gt;
+&lt;/section&gt;</t>
+<t tx="leo.20180626205526.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+Q5.
+
+[40523230倉儲鏈結](https://github.com/s40523230/cd2018_team_10)
+    &lt;/script&gt;
+&lt;/section&gt;</t>
+<t tx="leo.20180626205547.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+# 上課筆記
+
+##### 作實的不必虛，做虛的不必實
+
+##### 虛 : 模擬接近真實
+
+##### 實 : 要確定有最佳化設計
+
+##### kinenatic 運動學
+
+##### static 靜力學
+
+##### dynamic 動力學
+
+##### 系統 - 有範圍的
+    &lt;/script&gt;
+&lt;/section&gt;</t>
+<t tx="leo.20180626221318.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+機械設計工程系
+
+協同產品設計實習第十組期中報告
+
+組員 :
+
+40523205葉琪惠
+
+40523206潘巧昕
+
+40523230陳永昌
+
+40123252賴立偉
+    &lt;/script&gt;
+&lt;/section&gt;</t>
+<t tx="leo.20180626221340.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+所選定的鋼球運動系統
+
+&lt;a href="https://s40523205.gitbooks.io/cd2018/content/assets/p1.png"&gt;&lt;img src="https://s40523205.gitbooks.io/cd2018/content/assets/p1.png"&gt;&lt;/a&gt;
+
+[提球機構範例影片](https://youtu.be/lg7U3efS77w)
+[V-rep機構模擬檔](https://github.com/s40523230/cd2018_team_10/blob/master/%E7%AC%AC%E5%8D%81%E7%B5%84v-rep%E6%8F%90%E7%90%83%E6%A8%A1%E6%93%AC%E6%A9%9F%E6%A7%8B.ttt)
+    &lt;/script&gt;
+&lt;/section&gt;</t>
+<t tx="leo.20180626221340.2">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+[手動運算]
+單位 : mm
+
+提球機構從下運至上的移動路徑為128(直徑)/2*3.14 = 213.52，要花39秒，經過上面到接口並且掉下來的路徑時間大概只需要4秒，掉下來後沿著路徑回到原點大約也是4秒，總結會花上47秒
+
+[V-rep模擬]
+
+提球機構從下運至上花了39秒，經過上面到接口並且掉下來的路徑時間，因為停留了一下，所以變成了6~8秒，掉下來後沿著路徑回到原點大約4秒，總結會花上49~51秒，模擬與手動運算上相差了2~4秒
+    &lt;/script&gt;
+&lt;/section&gt;</t>
+<t tx="leo.20180626221340.3">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+各組員各自使用應用程式，進行提球機構的編譯，並把自己較為擅長的部份做出來，然後在雲端上執行或模擬，所以不需要較大的硬碟與記憶體，另外針對需要大量計算的應用程式，也把它放到雲端上面執行，也減少了許多的運算時間，之後再利用Gitbook上傳並進行協同，每個組員都可以利用Gitbook同時存取，進行修改或編譯，不會受到空間的限制，而且不論各組用利用何種裝置，只需要網路即可使用雲端，大大增加設計流程的效益。
+    &lt;/script&gt;
+&lt;/section&gt;</t>
+<t tx="leo.20180626221341.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+鋼球運動系統個零件工程圖及檔案
+
+&lt;a href="https://i.imgur.com/CeB1RmV.jpg"&gt;&lt;img src="https://i.imgur.com/CeB1RmV.jpg"&gt;&lt;/a&gt;
+    &lt;/script&gt;
+&lt;/section&gt;</t>
+<t tx="leo.20180626221341.2">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+各組員貢獻及倉儲
+
+[40523230陳永昌](https://github.com/s40523230/cd2018_team_10)
+
+[40123252賴立偉](https://github.com/40123252/cd2018_team_10)
+
+[40523205葉琪惠](https://github.com/s40523205/cd-2018)
+
+[40523206潘巧昕](https://github.com/s40523206/cd2018-06)
+    &lt;/script&gt;
+&lt;/section&gt;</t>
+<t tx="leo.20180626225913.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+# week15
+
+上課筆記:
+
+協同產品設計實習-
+
+功不唐捐
+
+凡走過必留下痕跡
+
+設計是一連串問題的解決過程
+
+工程設計的結果應該是可以讓人依頓，且能得到設計者所預期的結果
+
+協同是多人協力一同，試圖達到特定目標的作為
+
+實習是實際學習、見習與練習的總和
+    &lt;/script&gt;
+&lt;/section&gt;</t>
 <t tx="yen.20170108171605.1"></t>
 <t tx="yen.20170108171605.2">QTreeWidget {
     /* These apply to the selected item, but not to editing items.*/
@@ -257,111 +534,24 @@ Created by [陳永昌](http://chiamingyen.github.io/kmolab/blog/)
 import os
 #os.system("pelican content -o output -s local_publishconf.py -t theme/pelican-bootstrap3")
 os.system("pelican content -o blog -s local_publishconf.py")
-g.es("admin pelican 近端執行完畢")
-
-
-</t>
+g.es("admin pelican 近端執行完畢")</t>
 <t tx="yen.20170108171733.5"></t>
-<t tx="yen.20170108171733.64">&lt;section&gt;
-&lt;section data-markdown&gt;
+<t tx="yen.20170108171733.64">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
-&lt;!-- 請注意, @others 不可以內縮 --&gt;
-機械設計:設計士一種表達，寫在{設}說清楚意別人做甚麼
-表達方式:口語.文字.2D.實際.量化
-機:很多零件組合可精巧運作的器物
-械:在一定範圍內
-設:表達清楚
-計:經考量討論
-硬體.流體.軟體:最佳化
+# week 3
+
+這周分別建立了二個協同倉儲
+
+gitbook是負責文圖記錄用
+
+而github是負責保留文件檔案用
+
+[gitbook協同倉儲](https://www.gitbook.com/book/s40523205/cd2018/details)
+
+[github協同倉儲](https://github.com/s40523230/cd2018_team_10)
+
     &lt;/script&gt;
 &lt;/section&gt;
-&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-&lt;!-- 請注意, @others 不可以內縮 --&gt;
-DNS連接到mdecourse.github.io
-CNAM:代表別名
-https://[2001:288:6004:17::7}
-學校   2001"288"6004"17::7
-           2001:booo:168::1
-proxy[2001:288:6004:17::17]
-雲端特性:彈性(工具)
-Mbr(Master Boot Record)
-SSD 固態硬碟(不旋轉)
-SCSI：小型電腦介面
-RAID：容錯式磁碟陣列（RAID，獨立磁盤冗餘陣列）
-    &lt;/script&gt;
-&lt;/section&gt;
-&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-&lt;!-- 請注意, @others 不可以內縮 --&gt;
-虛擬主機
-Oracle 公司:資料庫
-設定值:單一
-檔案喜好 設定:系統
-網路NAT(服務系統)
-1.NAT網路(虛擬主機可透NAT來連線)
-僅限主機網路
-設定值
-橋接介面卡(找NAT)(與外接IP一樣)
-    &lt;/script&gt;
-&lt;/section&gt;
-
-
-
-						
-&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-&lt;!-- 請注意, @others 不可以內縮 --&gt;
-DNS連接到mdecourse.github.io
-CNAM:代表別名
-https://[2001:288:6004:17::7}
-學校   2001"288"6004"17::7
-           2001:booo:168::1
-proxy[2001:288:6004:17::17]
-雲端特性:彈性(工具)
-Mbr(Master Boot Record)
-SSD 固態硬碟(不旋轉)
-SCSI：小型電腦介面
-RAID：容錯式磁碟陣列（RAID，獨立磁盤冗餘陣列）
-    &lt;/script&gt;
-&lt;/section&gt;
-@others
-&lt;/section&gt;
-</t>
-<t tx="yen.20170108171733.67">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-&lt;!-- 請注意, @others 不可以內縮 --&gt;
-@others
-    &lt;/script&gt;
-&lt;/section&gt;
-
-
-
-						
-</t>
-<t tx="yen.20170108171733.69">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-@others
-    &lt;/script&gt;
-&lt;/section&gt;
-
-
-						
-# 安裝使用Ubuntu
-
-&lt;iframe src="https://player.vimeo.com/video/214970970" width="640" height="385" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
-&lt;p&gt;&lt;a href="https://vimeo.com/214970970"&gt;2017-06-25_13-36-36&lt;/a&gt; from &lt;a href="https://vimeo.com/user65942712"&gt;林兆戎&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
-</t>
-<t tx="yen.20170108171733.70">ipconfig/all
-ping 自己IP
-ping Gateway IP
-ping 外部 Gateway
-ping 外部 IP
-tracert 區域主要網站
-tracert 廣域網路主要網站
-fossil clone uri fossil-file
-fossil open
-fossil add
 </t>
 <t tx="yen.20170108171733.71"></t>
 <t tx="yen.20170108171733.8">@language xml
